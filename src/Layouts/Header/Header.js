@@ -10,9 +10,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+// import Productcrud from "../pages/Admin/Productcrud/Productcrud"
+// import Categorycrud from "../pages/Admin/Categorycrud/Categorycrud"
 
-const pages = ['Products'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Products','Category'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

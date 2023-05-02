@@ -101,10 +101,11 @@ async function updateProduct(id){
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="right">image</TableCell>
-            <TableCell align="right">name</TableCell>
-            <TableCell align="right">price</TableCell>
-            <TableCell align="right">description</TableCell>
+            <TableCell align="center">name</TableCell>
+            <TableCell align="center">image</TableCell>
+            <TableCell align="center">price</TableCell>
+            <TableCell align="center">description</TableCell>
+            <TableCell align="center">CategoryID</TableCell>
           </TableRow>
         </TableHead>
         </Table>
@@ -115,8 +116,8 @@ async function updateProduct(id){
     
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-                <TableCell align="right"><Input onChange={(e)=> setImage(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setName(e.target.value)}/></TableCell>
+                <TableCell align="right"><Input onChange={(e)=> setImage(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setPrice(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setDescription(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setCategoryId(e.target.value)}/></TableCell>
@@ -141,8 +142,8 @@ async function updateProduct(id){
 
         <TableBody>
             <TableRow>
-                <TableCell align="right">{row.image}</TableCell>
                 <TableCell align="right">{row.name}</TableCell>
+                <TableCell align="right">{row.image}</TableCell>
                 <TableCell align="right">{row.price}</TableCell>
                 <TableCell align="right">{row.description}</TableCell>
                 <TableCell align="right">{row.Category?.name}</TableCell>
@@ -163,8 +164,8 @@ async function updateProduct(id){
     
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-                <TableCell align="right"><Input onChange={(e)=> setImage(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setName(e.target.value)}/></TableCell>
+                <TableCell align="right"><Input onChange={(e)=> setImage(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setPrice(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setDescription(e.target.value)}/></TableCell>
                 <TableCell align="right"><Input onChange={(e)=> setCategoryId(e.target.value)}/></TableCell>
